@@ -27,12 +27,6 @@ function Feed() {
             avatar={post.avatar}
             image={post.image}
             />))}
-
-            <Post displayName="Rawah Alsinan" username="raw3alsinan"
-            verified={true} text="I LOVE REACTJS!!" 
-            avatar="me.JPG"
-            image="me.jpg"
-            />
         </div>
     )
 }
