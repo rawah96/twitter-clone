@@ -4,6 +4,8 @@ import TweetBox from './TweetBox';
 import Post from './Post'
 import db from '../../firebase'
 import FlipMove from 'react-flip-move'
+//need to do npm run build again after changes/updates (to bundle the app)
+// now we deploy using firebase deploy
 function Feed() {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
