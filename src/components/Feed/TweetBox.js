@@ -7,30 +7,41 @@ function TweetBox() {
     const [tweetMessage, setTweetMessage] = useState('');
     const [tweetImage, setTweetImage] = useState('');
 
-    const sendTweet = e=> {
+    /*const sendTweet = (e) => {
         e.prefentDefault(); // since it's a form, it's gonna refresh
         // posting to database -- yarab it works..
-        db.collection('posts').add({
-            displayName: 'Amani Al Senan',
-            username: 'amanialsenan',
+        db.collection("posts").add({
+            displayName: "Rafeh Qazi",
+            username: "cleverqazi",
             verified: true,
             text: tweetMessage,
             image: tweetImage,
-            avatar: ""
-        })
-        .then(function() {
-            console.log("Document successfully written!");
-        })
-        .catch(function(error) {
-            console.error("Error writing document: ", error);
-        });
+            avatar:
+              "https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
+          
+        });*/
+
+        const sendTweet = (e) => {
+            e.preventDefault();
+        
+            db.collection("posts").add({
+              displayName: "Amani Alsenan",
+              username: "amanisenan",
+              verified: true,
+              text: tweetMessage,
+              image: tweetImage,
+              avatar:
+                ""
+            });
+
+
         // reset to blank
         setTweetImage("");
         setTweetMessage("");
     }
 
     return (
-        <div className="tweet-box">
+        <div className="tweet-box"> 
             <form>
                 <div className="box-input">
                     <Avatar src={me}/>
