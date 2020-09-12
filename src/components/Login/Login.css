@@ -1,0 +1,66 @@
+.twitter-logo {
+    width: 38px;
+    padding-bottom: 40px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.login > h2 {
+    padding-bottom: 30px;
+}
+
+form > input {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: none;
+    background-color:  #e1ebf1;
+}
+
+form > div > input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    width: 500px;
+    outline: none;
+}
+
+.email, .password {
+    padding-bottom: 30px;
+}
+
+.login-btn {
+    width: 500px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #25a5f5;
+    height: 50px;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color:  #0f9bf1;
+}
+
+.login > a {
+    text-decoration: none;
+    color: var(--twitter-color);
+}
+
+.login > a > h4 {
+    font-weight: 500;
+}
+
+.login:hover > a {
+    border-bottom: 1px solid var(--twitter-color);
+}

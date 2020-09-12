@@ -34,7 +34,6 @@ function TweetBox() {
                 ""
             });
 
-
         // reset to blank
         setTweetImage("");
         setTweetMessage("");
